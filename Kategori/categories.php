@@ -26,7 +26,7 @@ $result = $conn->query($sql);
 
 <!-- Header -->
 <div class="w-full h-20 bg-gray-800 flex items-center justify-around text-white">
-    <a href="../Review/index.php">Back to Reviews</a>
+    <a href="index.php">Back to Reviews</a>
 </div>
 
 <!-- Main Content -->
