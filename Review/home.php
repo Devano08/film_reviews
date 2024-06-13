@@ -35,7 +35,7 @@ $categories = $conn->query("SELECT * FROM categories");
 <div class="font-semibold w-full h-20 bg-gray-800 flex items-center justify-around text-white">
     <p>Ferdinand Lauren</p>
     <p>Devano Michael</p>
-    <p>Rizky Arasyid</p>
+    <p>Rizky Arrasyid</p>
 </div>
 
 <!-- Main Content -->
