@@ -35,6 +35,13 @@ $actors = $conn->query("SELECT * FROM actors");
 <head>
     <title>Film Reviews</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script type="text/javascript">
+        function confirmDelete(reviewId) {
+            if (confirm("Are you sure you want to delete this review?")) {
+                window.location.href = 'delete.php?id=' + reviewId;
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -128,7 +135,7 @@ $actors = $conn->query("SELECT * FROM actors");
                             echo "<td class='py-2 px-4'>" . $row['category_name'] . "</td>";
                             echo "<td class='py-2 px-4'>" . $row['director_name'] . "</td>";
                             echo "<td class='py-2 px-4'>" . implode(", ", $actor_names) . "</td>";
-                            echo "<td class='py-2 px-4'><a href='edit.php?id=" . $row['id'] . "' class='text-blue-500 hover:text-blue-700'>Edit</a> | <a href='delete.php?id=" . $row['id'] . "' class='text-red-500 hover:text-red-700'>Delete</a></td>";
+                            echo "<td class='py-2 px-4'><a href='edit.php?id=" . $row['id'] . "' class='text-blue-500 hover:text-blue-700'>Edit</a> | <a href='#' onclick='confirmDelete(" . $row['id'] . ")' class='text-red-500 hover:text-red-700'>Delete</a></td>";
                             echo "</tr>";
                         }
                     } else {
