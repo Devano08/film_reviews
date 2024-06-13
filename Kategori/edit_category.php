@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $sql = "UPDATE categories SET name='$name' WHERE id=$id";
     if ($conn->query($sql) === TRUE) {
-        header('Location: categories.php');
+        header('Location: index.php');
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
