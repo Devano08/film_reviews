@@ -45,7 +45,7 @@ $categories = $conn->query("SELECT * FROM categories");
     <h2 class="text-2xl font-bold mb-6 text-center">Film Reviews by Kelompok 3</h2>
     <!-- Container Tombol -->
     <div class="w-full h-auto flex flex-col mt-16 ">
-        <a href="" class="w-full mb-2 text-center px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700">Home</a>
+        <a href="../Review/index.php" class="w-full mb-2 text-center px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700">Review</a>
         <a href="../Kategori/index.php" class="w-full mb-2 text-center px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700">Manage Categories</a>
         <a href="../Actors/index.php" class="w-full mb-2 text-center px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700">Manage Actors</a>
         <a href="../Sutradara/index.php" class="w-full text-center px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700">Manage Directors</a>
